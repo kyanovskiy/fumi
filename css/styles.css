@@ -432,8 +432,8 @@ p {
 
 /* =Content Block */
 .content-block {
-  background-color: #212121;
-  color: rgba(255, 255, 255, 0.9); }
+  background-color: #efefef;
+  color: #2b2b2b; }
   .content-block .wrapper {
     padding: 30px 0;
     text-align: center; }
