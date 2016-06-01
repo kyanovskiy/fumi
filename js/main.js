@@ -1,5 +1,5 @@
 !function (e) {
-    var o = new ScrollMagic.Controller, t = ["#slide01", "#slide02", "#slide03", "#slide04"], r = ["#slide01 header", "#slide02 header", "#slide03 header", "#slide04 header" ], n = ["#cb01", "#cb02", "#cb03"];
+    var o = new ScrollMagic.Controller, t = ["#slide01", "#slide02", "#slide03", "#slide04", "#slide05"], r = ["#slide01 header", "#slide02 header", "#slide03 header", "#slide04 header", "#slide05 header" ], n = ["#cb01", "#cb02", "#cb03"];
     if (!Modernizr.touch) {
         r.forEach(function (e, t) {
             {
