@@ -243,8 +243,8 @@ h1 {
     background: url(../img/img_mountains04.jpg) no-repeat center center;
     background-size: cover;
     opacity: 0.7; }
-  #slide05 .bcg {
-    background: url(../img/img_mountains04.jpg) no-repeat center center;
+  #slide04 .bcg {
+    background: url(../img/img_w_5.jpg) no-repeat center center;
     background-size: cover;
     opacity: 0.7; }
 
@@ -357,17 +357,17 @@ p {
       color: #ffffff; }
   .slide#slide03 .wrapper {
     padding-top: 100px; }
-  .slide#slide05 .button {
+  .slide#slide04 .button {
     border-color: #ffffff;
     color: #212121;
     background-color: rgba(255, 255, 255, 0.9); }
-  .slide#slide05 .button:hover {
+  .slide#slide04 .button:hover {
       border-color: #212121;
       background-color: #212121;
       color: #ffffff; }
-  .slide#slide05 .wrapper {
+  .slide#slide04 .wrapper {
     padding-top: 100px; }
-  .slide#slide04 {
+  .slide#slide05 {
     background-color: #be4c2c; }
 
 .button {
@@ -481,12 +481,12 @@ p {
       text-align: left;
       width: 100%;
       margin: 0; }
-    .slide#slide01, .slide#slide02, .slide#slide03, .slide#slide05 {
+    .slide#slide01, .slide#slide02, .slide#slide03 {
       color: #212121; }
-      .slide#slide01 .wrapper, .slide#slide02 .wrapper, .slide#slide03 .wrapper,.slide#slide05 .wrapper {
+      .slide#slide01 .wrapper, .slide#slide02 .wrapper, .slide#slide03 .wrapper,.slide#slide04 .wrapper {
         top: 20%;
         text-align: center; }
-      .slide#slide01 section, .slide#slide02 section, .slide#slide03 section, .slide#slide05 section {
+      .slide#slide01 section, .slide#slide02 section, .slide#slide03 section, .slide#slide04 section {
         margin: 0 auto; }
     .slide#slide01 {
       color: #ffffff; }
@@ -519,21 +519,21 @@ p {
     .slide#slide03 .bcg {
       opacity: 1; }
 
-     .slide#slide05 .wrapper {
+     .slide#slide04 .wrapper {
       padding: 0;
       top: 15%;
       -webkit-transform: translate(-50%, 0);
           -ms-transform: translate(-50%, 0);
               transform: translate(-50%, 0); }
-    .slide#slide05 section {
+    .slide#slide04 section {
       margin: 0 auto;
-      max-width: 570px; }
-    .slide#slide05 .button {
+      max-width: 1200px; }
+    .slide#slide04 .button {
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
       color: #212121; }
 
-    .slide#slide05 .bcg {
+    .slide#slide04 .bcg {
       opacity: 1; }
 
 
