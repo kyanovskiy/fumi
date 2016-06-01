@@ -259,7 +259,7 @@ h1 {
   #slide07 .bcg {
     background: url(../img/img_we.jpg) no-repeat center center;
     background-size: cover;
-    opacity: 1.5; }
+    opacity: 0.7; }
 
 /* =Navigation */
 nav {
