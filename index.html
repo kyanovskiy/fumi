@@ -18,7 +18,121 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+        <style type="text/css">
 
+
+            .item {
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                overflow: hidden;
+                margin: -0.135em;
+                width: 200px;
+                height: 200px;
+                background: #3085a3;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .item,
+            .item-hover,
+            .item-hover .mask,
+            .item-img,
+            .item-type-move .item-info {
+                width: 200px;
+                height: 200px;
+            }
+
+            .item-hover,
+            .item-hover .mask,
+            .item-img {
+                position:absolute;
+                top:0;
+                left:0;
+            }
+
+            .item-type-move .item-hover {
+                -webkit-transition: all 300ms ease-out;
+                -moz-transition: all 300ms ease-out;
+                -o-transition: all 300ms ease-out;
+                transition: all 300ms ease-out;
+                opacity:0;
+                cursor:pointer;
+                z-index:100;
+            }
+
+            .item-type-move .item-info {
+                z-index:10;
+                color:#ffffff;
+                position:relative;
+                z-index:5;
+                overflow:hidden;
+            }
+
+            .item-type-move .item-info .headline,
+            .item-type-move .item-info .date {
+                width: 100%;
+                position:absolute;
+                -webkit-transition: all 300ms ease-out;
+                -moz-transition: all 300ms ease-out;
+                -o-transition: all 300ms ease-out;
+                transition: all 300ms ease-out;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                padding:0 10px;
+            }
+
+            .item-type-move .item-info .headline {
+                font-size:18px;
+                top:10px;
+            }
+
+            .item-type-move .item-info .date {
+                font-size:14px;
+                font-style:italic;
+                bottom:10px;
+            }
+
+            .item-type-move .item-info .line {
+                height:1px;
+                width:85%;
+                margin:10px auto 0 auto;
+                background-color:#ffffff;
+            }
+
+            .item-type-move .item-hover .mask {
+                background-color:#000;
+                opacity:0.5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+                filter: alpha(opacity=50);
+                z-index:0;
+            }
+
+            .item-type-move .item-hover:hover {
+                opacity:1;
+            }
+
+            .item-type-move .item-hover:hover .item-info .headline {
+                top:35%;
+            }
+
+            .item-type-move .item-hover:hover .item-info .date {
+                bottom:35%;
+            }
+
+
+
+            .item-img img{
+                background-color:#7a548f;
+                z-index:0;
+                width: 200px;
+                height: 200px;
+            }
+
+
+
+        </style>
         <style>
 
 li {
@@ -185,31 +299,64 @@ li a:hover {
                     <section>
                         <p class="slideInUp slideInUp2">Tech team in SF, Chicago, and Ukraine. Ready to scale fast.  Advisors: Deborah Small, Shabnam Malek, Rae Wedel, Phil Guziec</p>
                         <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="http://media.licdn.com/media/p/1/000/005/247/1126c5d.jpg" alt="John Cook">
-                                <figcaption>
-                                    <p>John Cook<br>President/COO</p>
-                                </figcaption>
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="http://media.licdn.com/media/p/2/000/0a2/200/2b73f50.jpg" alt="Ralph Pyne">
-                                <figcaption>
-                                    <p>Ralph Pyne<br>CEO</p>
-                                </figcaption>
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="http://media.licdn.com/media/AAEAAQAAAAAAAAZaAAAAJDY1ODEwMTUwLWFmZDktNDUwNi1iMjg0LTU3YWYyZGNmNDRhZA.jpg" alt="Irina Shumsky">
-                                <figcaption>
-                                    <p>Irina Shumsky<br>CEO</p>
-                                </figcaption>
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="http://media.licdn.com/media/AAEAAQAAAAAAAAJNAAAAJDNlODI4YTg5LTUyZjctNGEwZC05NDQwLTFiZWMwZjk1NWRiOQ.jpg" alt="Tsan Abrahamson">
-                                <figcaption>
-                                    <p>Tsan Abrahamson<br>Legal counsel</p>
-                                </figcaption>
-                            </figure>
+                        <div class="item item-type-move">
+                            <a class="item-hover" href="https://www.linkedin.com/in/jpcook" target="_blank">
+                                <div class="item-info">
+                                    <div class="headline">
+                                        John Cook
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="date">President/COO</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div class="item-img"><img src="http://media.licdn.com/media/p/1/000/005/247/1126c5d.jpg" alt="" /></div>
                         </div>
+
+                        <div class="item item-type-move">
+                            <a class="item-hover" href="https://www.linkedin.com/in/ralph-pyne-0b5b6b1" target="_blank">
+                                <div class="item-info">
+                                    <div class="headline">
+                                        Ralph Pyne
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="date">CEO</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div class="item-img"><img src="http://media.licdn.com/media/p/2/000/0a2/200/2b73f50.jpg" alt="" /></div>
+                        </div>
+
+                        <div class="item item-type-move">
+                            <a class="item-hover" href="https://www.linkedin.com/in/irina-shumsky-b646973" target="_blank">
+                                <div class="item-info">
+                                    <div class="headline">
+                                        Irina Shumsky
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="date">CEO</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div class="item-img"><img src="http://media.licdn.com/media/AAEAAQAAAAAAAAZaAAAAJDY1ODEwMTUwLWFmZDktNDUwNi1iMjg0LTU3YWYyZGNmNDRhZA.jpg" alt="" /></div>
+                        </div>
+                        <div class="item item-type-move">
+                            <a class="item-hover" href="https://www.linkedin.com/in/cobalt" target="_blank">
+                                <div class="item-info">
+                                    <div class="headline">
+                                        Tsan Abrahamson
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="date">Legal counsel</div>
+                                </div>
+                                <div class="mask"></div>
+                            </a>
+                            <div class="item-img"><img src="http://media.licdn.com/media/AAEAAQAAAAAAAAJNAAAAJDNlODI4YTg5LTUyZjctNGEwZC05NDQwLTFiZWMwZjk1NWRiOQ.jpg" alt="" /></div>
+                        </div>
+                            </div>
+
+                        <br>
+                        <br>
                     </section>
                     <br>
                     <br>
