@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/product-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -80,9 +80,13 @@
                     <a href="#contact">BLOG</a>
                 </li>
                 <li style="margin-top: 10px;margin-left: 50px;">
-                    <button style="border: none; color: white; text-align: center; text-decoration: none;
+                    <a href="#contact" class="btn btn-info" style="border: none; color: white; text-align: center; text-decoration: none;
                     display: inline-block; border: transparent; background-color: #7fe07a; border: none; font-size: 12px;
-                    width: 100px; height: 30px;">CONTACT US</button>
+                    width: 100px; height: 30px;padding: 0px;padding-top: 5px;" role="button">CONTACT US</a>
+
+                    <!--<button style="border: none; color: white; text-align: center; text-decoration: none;-->
+                    <!--display: inline-block; border: transparent; background-color: #7fe07a; border: none; font-size: 12px;-->
+                    <!--width: 100px; height: 30px;">CONTACT US</button>-->
                 </li>
             </ul>
 
@@ -96,17 +100,20 @@
 <!-- Header -->
 <a name="about"></a>
 
-<div class="intro-header">
+<div class="intro-header" style="">
 
 
-    <div class="container">
+    <div class="container" style="width: 100%;">
 
     <div class="row">
-    <div class="col-lg-12">
+    <div class="">
     <div class="intro-message">
-    <h2 style="color: #000000;font-weight: 300;">OUR PRODUCTS FOR YOUR BUSINESS</h2>
+    <h2 style="color: #000000;font-weight: 300;">OUR <span style="color: #7fe07a;">PRODUCTS</span> FOR YOUR BUSINESS</h2>
     <h5 style="color: #000000; font-weight: 300">QUANTIFYING YOUR EXPERIENCE</h5>
-    <hr class="intro-divider">
+        <button style="border: none; color: white; text-align: center; text-decoration: none;
+                    display: inline-block; border: transparent; background-color: #7fe07a; border: none; font-size: 12px;
+                    width: 100px; height: 30px;">FIND YOURS</button>
+
     </div>
     </div>
     </div>
@@ -148,20 +155,39 @@
     <div class="container">
 
         <div class="row">
-            <div class="">
+            <div class="col-lg-5 col-sm-6">
                 <!--<hr class="section-heading-spacer">-->
                 <div class="clearfix"></div>
-                <h2 class="section-heading" style="text-align: center;color: #7fe07a;">M-THEORY</h2>
-                <h5 style="color: #000000; font-weight: 300;text-align: center;">SHARING YOUR EXPERIENCE</h5>
+                <h2 class="section-heading" style="text-align: center;">M-THEORY</h2>
+                <h3 style="font-weight: 300;text-align: center;color: #7fe07a;">SHARING YOUR EXPERIENCE</h3>
 
-                <p class="lead" style="text-align: justify;">M-Theory is a  smartphone application that allows users to understand commcier cannabis products  including their chemical and scientific data of cannabis products, and then crowdshare  experiences, results and medical symptoms.
+                <p class="lead">M-Theory is a  smartphone application that allows users to understand commcier cannabis
+                    products  including their chemical and scientific data of cannabis products, and then crowdshare
+                    experiences, results and medical symptoms.
                     <br><br>
-                    M-Theory also interfaces with StringTheory  and allows dispensaries to review and shared crowdshared information about cannabis strains with their customers.  M-Theory users have the option of using the app anonymously, or of creating an account that may be tied to their dispensary purchases to easily track their own experiences.</p>
+                    M-Theory also interfaces with StringTheory  and allows dispensaries to review and shared crowdshared
+                    information about cannabis strains with their customers.  M-Theory users have the option of using the
+                    app anonymously, or of creating an account that may be tied to their dispensary purchases to easily
+                    track their own experiences.</p>
             </div>
-            <!--<div class="col-lg-5 col-sm-pull-6  col-sm-6">-->
-            <!--<img class="img-responsive" src="img/dog.png" alt="">-->
-            <!--</div>-->
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/product/Product-page_1.1.png" alt="">
+            </div>
         </div>
+
+        <!--<div class="row">-->
+            <!--<div class="">-->
+                <!--&lt;!&ndash;<hr class="section-heading-spacer">&ndash;&gt;-->
+                <!--<div class="clearfix"></div>-->
+                <!--<h2 class="section-heading" style="text-align: center;color: #7fe07a;">M-THEORY</h2>-->
+                <!--<h5 style="color: #000000; font-weight: 300;text-align: center;">SHARING YOUR EXPERIENCE</h5>-->
+
+                <!--<p class="lead" style="text-align: justify;">M-Theory is a  smartphone application that allows users to understand commcier cannabis products  including their chemical and scientific data of cannabis products, and then crowdshare  experiences, results and medical symptoms.-->
+                    <!--<br><br>-->
+                    <!--M-Theory also interfaces with StringTheory  and allows dispensaries to review and shared crowdshared information about cannabis strains with their customers.  M-Theory users have the option of using the app anonymously, or of creating an account that may be tied to their dispensary purchases to easily track their own experiences.</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
 
     </div>
     <!-- /.container -->
@@ -185,7 +211,7 @@
                     on growing, manufacturing, dispensing or delivery, StringTheory’s adaptable technology allows you to
                     easily collect manage and transfer cannabis information and generate tracking and filing reports
                     required under state law.</p>
-
+                    <p class="lead" style="text-align:center;"><img class="" src="img/product/Product-page_2.png" alt=""></p>
                 <p class="lead" style="text-align: justify;">StringTheory’s modular design interfaces with your existing
                     software, and adapts to  your specific requirements, meaning you only pay for what you need.
                     StringTheory also gives you access to up-to-date changes in compliance, state by state.
@@ -207,17 +233,32 @@
 <div class="content-section-a">
 
     <div class="container">
-
         <div class="row">
-            <div class="">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <!--<hr class="section-heading-spacer">-->
                 <div class="clearfix"></div>
-                <h2 class="section-heading" style="text-align: center;color: #7fe07a;">WHY IT IS IMPORTANT</h2>
-
-                <p class="lead" style="text-align: justify;">Unlike pharmaceuticals, which have benefitted from decades and even centuries of medical research, cannabis products remain largely untested and often misunderstood by both consumers and medical professionals.  M-Theory and StringTheory bridge the gap between use and collective knowledge, combining  patients’ and users’ real world experience with science, and giving the medical profession  access to anonymized data for research.</p>
+                <h2 class="section-heading">WHY IT IS IMPORTANT</h2>
+                <p class="lead">Unlike pharmaceuticals, which have benefitted from decades and even centuries of
+                    medical research, cannabis products remain largely untested and often misunderstood by both
+                    consumers and medical professionals.  M-Theory and StringTheory bridge the gap between use and
+                    collective knowledge, combining  patients’ and users’ real world experience with science, and giving
+                    the medical profession  access to anonymized data for research.</p>
             </div>
-
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <img class="img-responsive" src="img/product/Product-page_3.png" alt="">
+            </div>
         </div>
+
+        <!--<div class="row">-->
+            <!--<div class="">-->
+                <!--&lt;!&ndash;<hr class="section-heading-spacer">&ndash;&gt;-->
+                <!--<div class="clearfix"></div>-->
+                <!--<h2 class="section-heading" style="text-align: center;color: #7fe07a;">WHY IT IS IMPORTANT</h2>-->
+
+                <!--<p class="lead" style="text-align: justify;">Unlike pharmaceuticals, which have benefitted from decades and even centuries of medical research, cannabis products remain largely untested and often misunderstood by both consumers and medical professionals.  M-Theory and StringTheory bridge the gap between use and collective knowledge, combining  patients’ and users’ real world experience with science, and giving the medical profession  access to anonymized data for research.</p>-->
+            <!--</div>-->
+
+        <!--</div>-->
 
     </div>
     <!-- /.container -->
@@ -244,17 +285,17 @@
             <div style="padding-top: 60px; padding-left: 600px;">
                 <form action="">
                     <!--<label for="fname">First Name</label>-->
-                    <input type="text" id="message" name="message">
-                    </br>
+                    <textarea class="form-control" rows="4" placeholder="Message ..." id="comment" style="border-left-color: chartreuse;width: 80%;;background-color: #f8f8f8;margin-bottom: 8px;border-left-width: 4px;"></textarea>
+
+                    <!--<input type="text" id="message" name="message" placeholder="Message ..." style="border-left-color: chartreuse;width: 80%;">-->
                     <!--<label for="lname">Last Name</label>-->
-                    <input type="text" id="email" name="email">
-                    </br>
+                    <input type="text" class="form-control" placeholder="Email" id="email" style="border-left-color: chartreuse;width: 40%;background-color: #f8f8f8;margin-bottom: 8px;border-left-width: 4px;">
+                    <input type="text" class="form-control" id="name" placeholder="Name" style="border-left-color: chartreuse;width: 40%;background-color: #f8f8f8;border-left-width: 4px;">
                     <!--<label for="lname">Last Name</label>-->
-                    <input type="text" id="name" name="name">
+                    <!--<input type="text" id="name" name="name" placeholder="Name" style="border-left-color: chartreuse;width: 40%">-->
                     </br>
-                    </br>
-                    <input style="background-color: #7fe07a; border: none; color: #ffffff;font-size: 12px; width: 100px; height: 30px;"
-                           type="submit" value="CONTACT US">
+                    <input style="background-color: #7fe07a; border: none; color: #ffffff;font-size: 12px; width: 150px; height: 30px;"
+                           type="submit" value="FIND OUT THE COST">
                 </form>
                 <!--<div class="col-lg-5 col-lg-offset-2 col-sm-6">-->
                 <!--<img class="img-responsive" src="img/phones.png" alt="">-->
