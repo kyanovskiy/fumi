@@ -85,14 +85,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="#" style="padding:0"><span style="width: 120px;"><img
+            <a class="navbar-brand topnav" href="#intro" style="padding:0"><span style="width: 120px;"><img
                     style="width: inherit;  height: inherit" src="img/Fumiware_logo_big.png" alt="logo"/></span></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active">
-                     <a href="#">SOLUTIONS</a>
+                     <a href="#intro">SOLUTIONS</a>
                 </li>
                 <li>
                     <a href="products.html">PRODUCTS</a>
@@ -119,6 +119,7 @@
     <!-- /.container -->
 </nav>
 
+<a name="intro"></a>
 
 <div class="intro-header">
 
@@ -379,6 +380,7 @@
 
 </div>
 <!-- /.content-section-a -->
+<a name="contact"></a>
 
 <div class="content-section-a">
 
@@ -410,7 +412,6 @@
     </div>
 </div>
 
-<a name="contact"></a>
 
 <div class="banner">
 
@@ -443,7 +444,46 @@
     if(message!=''){
     window.open(sendUrl);
     }
-};</script>
+};
+
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+
+        var y = $(this).scrollTop();
+
+        $('.link').each(function (event) {
+            if (y >= $($(this).attr('href')).offset().top - 40) {
+                console.log(y);
+//                $('.link').not(this).removeClass('active');
+//                $(this).addClass('active');
+            }
+        });
+
+    });
+});
+
+// SMOOTH SCROLLING (with negative scroll of 40 for header)
+
+$(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: (target.offset().top - 40)
+                }, 850);
+                return false;
+            }
+        }
+    });
+});
+
+
+
+
+</script>
 </body>
 
 </html>
