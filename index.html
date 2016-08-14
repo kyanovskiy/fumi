@@ -101,15 +101,15 @@
                     <a href="#contact">SUPPORT</a>
                 </li>
                 <li>
-                    <a href="#contact">ABOUT US</a>
+                    <a href="#about">ABOUT US</a>
                 </li>
                 <li>
                     <a href="#contact">BLOG</a>
                 </li>
                 <li style="margin-top: 10px;margin-left: 50px;">
-                    <button style="border: none; color: white; text-align: center; text-decoration: none;
+                    <a href="#contact" class="btn btn-info" style="border: none; color: white; text-align: center; text-decoration: none;
                     display: inline-block; border: transparent; background-color: #7fe07a; border: none; font-size: 12px;
-                    width: 100px; height: 30px;">CONTACT US</button>
+                    width: 100px; height: 30px;padding: 0px;padding-top: 5px;" role="button">CONTACT US</a>
                 </li>
             </ul>
 
@@ -119,9 +119,6 @@
     <!-- /.container -->
 </nav>
 
-
-<!-- Header -->
-<a name="about"></a>
 
 <div class="intro-header">
 
@@ -275,6 +272,7 @@
 
 </div>
 <!-- /.content-section-a -->
+<a name="about"></a>
 
 <div class="content-section-a">
 
@@ -402,7 +400,7 @@
                     <input type="text" class="form-send" name="name" id="name" placeholder="Name" style="width: 40%;border-left-width: 4px;">
                     </br>
                     <input style="background-color: #61c96e; border: none; color: #ffffff;font-size: 12px; width: 150px; height: 30px;"
-                           type="submit" onclick="sendMail()" value="FIND OUT THE COST">
+                           type="submit" onclick="sendMail()" value="CONTACT US">
                 </form>
 
             </div>
@@ -441,8 +439,10 @@
     var name = $('#name').val();
     var email = $('#mail').val();
     var message = $('#comment').val();
-    var sendUrl="mailto:info@fumiware.com?subject=The subject - " + name + " (" + email + ")" + "&body=" + message;
+    var sendUrl="mailto:info@fumiware.com?subject=Info - " + name + " (" + email + ")" + "&body=" + message;
+    if(message!=''){
     window.open(sendUrl);
+    }
 };</script>
 </body>
 
