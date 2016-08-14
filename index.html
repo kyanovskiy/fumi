@@ -397,22 +397,14 @@
             </div>
             <div class="col-lg-5" style="padding-top: 10px;padding-bottom: 10px;">
                 <form action="">
-                    <!--<label for="fname">First Name</label>-->
-                    <textarea class="form-send" rows="4" placeholder="Message ..." id="comment" style="width: 100%;margin-bottom: 8px;border-left-width: 4px;"></textarea>
-
-                    <!--<input type="text" id="message" name="message" placeholder="Message ..." style="border-left-color: chartreuse;width: 80%;">-->
-                    <!--<label for="lname">Last Name</label>-->
-                    <input type="text" class="form-send" placeholder="Email" id="email" style="width: 40%;margin-bottom: 8px;border-left-width: 4px;">
-                    <input type="text" class="form-send" id="name" placeholder="Name" style="width: 40%;border-left-width: 4px;">
-                    <!--<label for="lname">Last Name</label>-->
-                    <!--<input type="text" id="name" name="name" placeholder="Name" style="border-left-color: chartreuse;width: 40%">-->
+                    <textarea class="form-send" rows="4" name="comment" placeholder="Message ..." id="comment" style="width: 100%;margin-bottom: 8px;border-left-width: 4px;"></textarea>
+                    <input type="text" class="form-send" name="mail" placeholder="Email" id="mail" style="width: 40%;margin-bottom: 8px;border-left-width: 4px;">
+                    <input type="text" class="form-send" name="name" id="name" placeholder="Name" style="width: 40%;border-left-width: 4px;">
                     </br>
                     <input style="background-color: #61c96e; border: none; color: #ffffff;font-size: 12px; width: 150px; height: 30px;"
-                           type="submit" value="FIND OUT THE COST">
+                           type="submit" onclick="sendMail()" value="FIND OUT THE COST">
                 </form>
-                <!--<div class="col-lg-5 col-lg-offset-2 col-sm-6">-->
-                <!--<img class="img-responsive" src="img/phones.png" alt="">-->
-                <!--</div>-->
+
             </div>
         </div>
         <!-- /.container -->
@@ -445,7 +437,13 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
+<script>function sendMail() {
+    var name = $('#name').val();
+    var email = $('#mail').val();
+    var message = $('#comment').val();
+    var sendUrl="mailto:info@fumiware.com?subject=The subject - " + name + " (" + email + ")" + "&body=" + message;
+    window.open(sendUrl);
+};</script>
 </body>
 
 </html>
