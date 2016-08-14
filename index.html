@@ -41,6 +41,33 @@
             height: 100%;
             margin-bottom: 10px;
         }
+
+        .form-send {
+            display: block;
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: rgba(233, 117, 159, 0.91);
+            background-color: rgba(147, 147, 147, 0.05);
+            border: 1px solid rgba(223, 223, 223, 0.29);
+            border-radius: 4px;
+            border-left-color: #9ce6a5;
+            border-left-width: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(48, 179, 71, 0.92);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        .form-send:focus {
+            background-color: rgba(213, 213, 213, 0.28);
+            outline: 0;
+            border-left-color: #45bf55;
+            border-left-width: 4px;
+            /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(147, 147, 147, 0.32);*/
+            /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(85, 85, 85, 0.17);*/
+        }
     </style>
 </head>
 
@@ -64,8 +91,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#about">SOLUTIONS</a>
+                <li class="active">
+                     <a href="#">SOLUTIONS</a>
                 </li>
                 <li>
                     <a href="products.html">PRODUCTS</a>
@@ -115,14 +142,14 @@
                     <div class="col-lg-12">
                         <div class="intro-message" style="height: 600px">
                             <h1 style="color: #000000;font-weight: 300;">GROWERS</h1>
-                            <h5 style="color: #000000; font-weight: 300">Whether you have 12 plants or 12,000, StringTheory is
+                            <p class="carousel_text" >Whether you have 12 plants or 12,000, StringTheory is
                                 designed to make the management abd tracking of plants by growers easy and intuitive.
                                 StringTheory allows you to track your seeds or clones from the time you acuire them to the time
                                 the ready-for-sale product leaves your care. Once you'r ready to pland, open StringTheory and
                                 create an entry for each individual plant, directly from your smart phone, or from your desktop.
                                 You can even add information about the source of your pland, directly from your smart phone, or
                                 from your desktop. You can even add information about the source of your plants - either plant
-                                seller or mother plant.</h5>
+                                seller or mother plant.</p>
                         </div>
                     </div>
                 </div>
@@ -136,9 +163,10 @@
                         <div class="col-lg-12">
                             <div class="intro-message" style="height: 600px">
                                 <h1 style="color: #000000;font-weight: 300;">CONSUMERS</h1>
-                                <h5 style="color: #000000; font-weight: 300">Consumers are the cornerstone of any successful cannabis business.
+                                <p class="carousel_text" >Consumers are the cornerstone of any successful cannabis business.
                                     Only M-Theory is designed to create an interactive database powerful enough to combine and cross reference  strains, symptoms, and even pharmaceutical interactions so consumers can make informed choices, and businesses can better understand their product’s effectiveness under real market conditions.
-                                    In addition, M-Theory has a built in alert system that can quickly message users if there is a product recall or warning, making it a first stop for users.</h5>
+                                    In addition, M-Theory has a built in alert system that can quickly message users if
+                                    there is a product recall or warning, making it a first stop for users.</p>
                             </div>
                         </div>
                     </div>
@@ -153,8 +181,9 @@
                         <div class="col-lg-12">
                             <div class="intro-message" style="height: 600px">
                                 <h1 style="color: #000000;font-weight: 300;">RESEARCHERS</h1>
-                                <h5 style="color: #000000; font-weight: 300">Research is critical to the future of cannabis as a treatment option, and FumiWare recognizes its role in bringing quaity cannabis data for research purposes as central to its purpose.
-                                    M-Theory and StringTheory are not just “Yelp! and TurboTax for Cannabis.”  In addition to bringing crowdsharing to users and simple compliance solutions to the cannabis industry, FumiWare aggregates and disseminates the information it collects  in an anonymous form for use by researchers and medical professionals.</h5>
+                                <p class="carousel_text" >Research is critical to the future of cannabis as a treatment option, and FumiWare recognizes its role in bringing quaity cannabis data for research purposes as central to its purpose.
+                                    M-Theory and StringTheory are not just “Yelp! and TurboTax for Cannabis.”  In
+                                    addition to bringing crowdsharing to users and simple compliance solutions to the cannabis industry, FumiWare aggregates and disseminates the information it collects  in an anonymous form for use by researchers and medical professionals.</p>
                             </div>
                         </div>
                     </div>
@@ -169,9 +198,9 @@
                         <div class="col-lg-12">
                             <div class="intro-message" style="height: 600px">
                                 <h1 style="color: #000000;font-weight: 300;">WHO YOU ARE</h1>
-                                <h5 style="color: #000000; font-weight: 300">FumiWare meets the needs of businesses, regardless of where they come into the cannabis continuum.
+                                <p class="carousel_text" >FumiWare meets the needs of businesses, regardless of where they come into the cannabis continuum.
                                     Using best practices from both agriculture and alcohol beverage industries, FumiWare offers powerful management and compliance solutions that are easy to implement and grow with the business.
-                                    Whether starting from cultivation, manufacturing, or dispensing, FumiWare solutions  allow cannabis industry tracking from seed to sale.</h5>
+                                    Whether starting from cultivation, manufacturing, or dispensing, FumiWare solutions  allow cannabis industry tracking from seed to sale.</p>
                             </div>
                         </div>
                     </div>
@@ -358,7 +387,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
+            <div class="col-lg-7">
                 <!--<hr class="section-heading-spacer">-->
                 <div class="clearfix"></div>
                 <h2 class="section-heading" style="text-align: center;">WANT TO KNOW MORE?</h2>
@@ -366,26 +395,25 @@
                 <p class="lead" style="text-align: center;">We're testing and advancing as you read this. <br> Email us
                     for more information. <br> Want to the a beta tester? Help us improve our product! </p>
             </div>
-            <div style="padding-top: 60px; padding-left: 600px;">
+            <div class="col-lg-5" style="padding-top: 10px;padding-bottom: 10px;">
                 <form action="">
                     <!--<label for="fname">First Name</label>-->
-                    <input type="text" id="message" name="message">
-                    </br>
+                    <textarea class="form-send" rows="4" placeholder="Message ..." id="comment" style="width: 100%;margin-bottom: 8px;border-left-width: 4px;"></textarea>
+
+                    <!--<input type="text" id="message" name="message" placeholder="Message ..." style="border-left-color: chartreuse;width: 80%;">-->
                     <!--<label for="lname">Last Name</label>-->
-                    <input type="text" id="email" name="email">
-                    </br>
+                    <input type="text" class="form-send" placeholder="Email" id="email" style="width: 40%;margin-bottom: 8px;border-left-width: 4px;">
+                    <input type="text" class="form-send" id="name" placeholder="Name" style="width: 40%;border-left-width: 4px;">
                     <!--<label for="lname">Last Name</label>-->
-                    <input type="text" id="name" name="name">
+                    <!--<input type="text" id="name" name="name" placeholder="Name" style="border-left-color: chartreuse;width: 40%">-->
                     </br>
-                    </br>
-                    <input style="background-color: #7fe07a; border: none; color: #ffffff;font-size: 12px; width: 100px; height: 30px;"
-                           type="submit" value="CONTACT US">
+                    <input style="background-color: #61c96e; border: none; color: #ffffff;font-size: 12px; width: 150px; height: 30px;"
+                           type="submit" value="FIND OUT THE COST">
                 </form>
                 <!--<div class="col-lg-5 col-lg-offset-2 col-sm-6">-->
                 <!--<img class="img-responsive" src="img/phones.png" alt="">-->
                 <!--</div>-->
             </div>
-
         </div>
         <!-- /.container -->
 
