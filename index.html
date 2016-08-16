@@ -129,15 +129,6 @@
     <!-- /.container -->
 </nav>
 
-<div id="loader-content" style="padding-top: 10%; padding-left: 5%;">
-<header class="entry-header">
-    <h1 style="color: #7fe07a">You are in the right place my friend ...</h1>
-
-    <img style="float: left" src="https://media.giphy.com/media/S7sgQpM13f8ME/giphy.gif" alt="">
-
-    <img style="width: 300px; float: right" src="https://media.giphy.com/media/10NpxvqY6y1mGA/giphy.gif" alt="">
-
-</header>
 <div id="loader-wrapper">
 
     <div id="loader"></div>
@@ -146,8 +137,6 @@
     <div class="loader-section section-right"></div>
 
 </div>
-</div>
-
 <a name="intro"></a>
 
 <div class="intro-header">
@@ -515,26 +504,10 @@ $(function () {
 
 
 $(document).ready(function() {
-//    setTimeout(function(){
-//    }, 4000);
-
-    setTimeout(function(){
-        $('#loader-content').hide();
-//        $("#myCarousel").carousel("2");
-        $("#myCarousel").carousel("next");
+    $(window).load(function(){
         $('body').addClass('loaded');
 
-
-    }, 5000);
-//    setTimeout(function(){
-//        var loc= window.location.href;
-//        $("#myCarousel").carousel("next");
-////        if(!loc.endsWith("#intro")){
-////            window.location.href=window.location.href+"#intro";
-////
-////        }
-//
-//    }, 4500);
+    });
 
 });
 </script>
