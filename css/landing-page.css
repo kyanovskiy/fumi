@@ -17,12 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -36,26 +36,31 @@ h6 {
     color: #f8f8f8;
     background-size: cover;
 }
-.carousel_text{
+
+.carousel_text {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
 }
+
 .carousel .one {
     background: url(../img/background_growers3.jpg) no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
 }
+
 .carousel .two {
     background: url(../img/background_consumers.jpg) no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
 }
+
 .carousel .three {
     background: url(../img/background_researchers.jpg) no-repeat center center fixed;
     background-size: cover;
     -moz-background-size: cover;
 }
+
 .carousel .four {
     background: url(../img/background_who_you_are.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -77,14 +82,14 @@ h6 {
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-@media(max-width:767px) {
+@media (max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -145,7 +150,7 @@ h6 {
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
 }
 
@@ -158,17 +163,17 @@ h6 {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media (max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width:767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
         font-size: 3em;
     }
 
