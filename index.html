@@ -135,7 +135,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item one active">
-            <div style="background-color: rgba(255, 255, 255, 0.5);">
+            <!--<div style="background-color: rgba(255, 255, 255, 0.5);">-->
                 <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            <!--</div>-->
             </div>
 
             <div class="item two">
@@ -474,7 +474,7 @@ $(function () {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: (target.offset().top - 40)
+                    scrollTop: (target.offset().top - 50)
                 }, 850);
                 return true;
             }
